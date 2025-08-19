@@ -1,0 +1,66 @@
+  .create-list-container {
+            margin-top: 2rem;
+  }
+
+
+        .textarea-container {
+            color: white;
+            position: relative; /* relative */
+            border: 1px solid #d1d5db; /* border (gray-300) */
+            border-radius: 0.5rem; /* rounded-lg */
+            width: 650px;
+        }
+
+        .textarea-container:focus-within {
+            outline: none;
+            box-shadow: 0 0 0 2px #3b82f6; /* focus-within:ring-2 focus-within:ring-blue-500 */
+        }
+
+        .custom-textarea {
+            width: 100%; 
+            padding: 1rem; 
+            padding-bottom: 4rem; 
+            border: none; 
+            resize: none; 
+            background: transparent; 
+            font-family: inherit;
+            font-size: inherit;
+        }
+
+        .custom-textarea:focus {
+            outline: none; /* focus:outline-none */
+        }
+
+        .button-container {
+            position: absolute; /* absolute */
+            bottom: 0.75rem; /* bottom-3 */
+            right: 0.75rem; /* right-3 */
+            display: flex; /* flex */
+            gap: 0.5rem; /* gap-2 */
+            align-items: center; /* items-center */
+        }
+
+        .character-count {
+            font-size: 0.875rem; /* text-sm */
+            color: #6b7280; /* text-gray-500 */
+        }
+
+        .tweet-button {
+            background-color: #3b82f6; /* bg-blue-500 */
+            color: white; /* text-white */
+            padding: 0.5rem 1.5rem; /* px-6 py-2 */
+            border-radius: 9999px; /* rounded-full */
+            font-weight: 600; /* font-semibold */
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.2s ease; /* transition-colors */
+        }
+
+        .tweet-button:hover:not(:disabled) {
+            background-color: #2563eb; /* hover:bg-blue-600 */
+        }
+
+        .tweet-button:disabled {
+            background-color: #d1d5db; /* disabled:bg-gray-300 */
+            cursor: not-allowed;
+        }
